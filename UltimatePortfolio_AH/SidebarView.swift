@@ -37,6 +37,7 @@ struct SidebarView: View {
                             .badge(filter.tag?.tagActiveIssues.count ?? 0)
                     }
                 }
+                .onDelete(perform: delete)
             }
         }
         .toolbar {
@@ -46,6 +47,14 @@ struct SidebarView: View {
             } label: {
                 Label("ADD SAMPLES", systemImage: "flame")
             }
+        }
+    }
+    
+    
+    func delete(_ offsets: IndexSet) {
+        for offset in offsets { // índices a borrar (de onDelete)
+            let item = tags[offset] // obtiene el Tag en ese índice
+            dataController.delete(item) // elimina en Core Data y guarda
         }
     }
 }

@@ -27,7 +27,7 @@ extension Issue {
         modificationDate ?? .now
     }
     
-    // NSSet Creo quie aqui añadimos la relacion que tiene issues con tags
+    // NSSet Creo que aqui añadimos la relacion que tiene issues con tags
     var issueTags: [Tag] {
         let result = tags?.allObjects as? [Tag] ?? []
         return result.sorted()
@@ -49,12 +49,15 @@ extension Issue {
 
 extension Issue: Comparable {
     public static func <(lhs: Issue, rhs: Issue) -> Bool {
+        // Compara los títulos en minúsculas
         let left = lhs.issueTitle.localizedLowercase
         let right = rhs.issueTitle.localizedLowercase
 
         if left == right {
+            // Si los títulos son iguales, ordena por fecha de creación
             return lhs.issueCreationDate < rhs.issueCreationDate
         } else {
+            // Si los títulos son distintos, ordena alfabéticamente
             return left < right
         }
     }
