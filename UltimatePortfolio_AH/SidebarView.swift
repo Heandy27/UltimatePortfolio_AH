@@ -47,6 +47,12 @@ struct SidebarView: View {
                                 } label: {
                                     Label("Rename", systemImage: "pencil")
                                 }
+                                
+                                Button(role: .destructive) {
+                                    delete(filter)
+                                } label: {
+                                    Label("Delete", systemImage: "trash")
+                                }
                             }
                     }
                 }
@@ -80,6 +86,7 @@ struct SidebarView: View {
             TextField("New name", text: $tagName)
         }
         .sheet(isPresented: $showingAwards, content: AwardView.init)
+        .navigationTitle("Filters")
     }
     
     
@@ -90,6 +97,12 @@ struct SidebarView: View {
         }
     }
     
+    
+    func delete(_ filter: Filter) {
+        guard let tag = filter.tag else { return }
+        dataController.delete(tag)
+        dataController.save()
+    }
     
     func rename(_ filter: Filter) {
         tagToRename = filter.tag
