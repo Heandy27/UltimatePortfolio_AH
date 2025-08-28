@@ -45,14 +45,14 @@ class DataController: ObservableObject {
         guard filterText.starts(with: "#") else {
             return []
         }
-
+        
         let trimmedFilterText = String(filterText.dropFirst()).trimmingCharacters(in: .whitespaces)
         let request = Tag.fetchRequest()
-
+        
         if trimmedFilterText.isEmpty == false {
             request.predicate = NSPredicate(format: "name CONTAINS[c] %@", trimmedFilterText)
         }
-
+        
         return (try? container.viewContext.fetch(request).sorted()) ?? []
     }
     
@@ -154,7 +154,7 @@ class DataController: ObservableObject {
     
     // Propiedad calculada: devuelve issues filtrados de Core Data
     func issuesForSelectedFilter() -> [Issue] {
-       
+        
         let filter = selectedFilter ?? .all // Filtro actual o "all"
         // Se declara un array temporal para guardar los issues que se van a obtener.
         var predicates = [NSPredicate]()
@@ -168,7 +168,7 @@ class DataController: ObservableObject {
         }
         
         let trimmedFilterText = filterText.trimmingCharacters(in: .whitespaces)
-
+        
         if trimmedFilterText.isEmpty == false {
             let titlePredicate = NSPredicate(format: "title CONTAINS[c] %@", trimmedFilterText)
             let contentPredicate = NSPredicate(format: "content CONTAINS[c] %@", trimmedFilterText)
@@ -227,4 +227,34 @@ class DataController: ObservableObject {
         selectedIssue = issue
         
     }
+    
+    func count<T>(for fetchRequest: NSFetchRequest<T>) -> Int {
+        (try? container.viewContext.count(for: fetchRequest)) ?? 0
+    }
+    
+    func hasEarned(award: Award) -> Bool {
+        switch award.criterion {
+        case "issues":
+            // return true if they added a certain number of issues
+            let fetchRequest = Issue.fetchRequest()
+            let awardCount = count(for: fetchRequest)
+            return awardCount >= award.value
+        case "closed":
+            // return true if they closed a certain number of issues
+            let fetchRequest = Issue.fetchRequest()
+            fetchRequest.predicate = NSPredicate(format: "completed = true")
+            let awardCount = count(for: fetchRequest)
+            return awardCount >= award.value
+        case "tags":
+            // return true if they created a certain number of tags
+            let fetchRequest = Tag.fetchRequest()
+            let awardCount = count(for: fetchRequest)
+            return awardCount >= award.value
+        default:
+            // An unkown award criterion; this should never be allowed
+            //fatalError("Unkown award criterion")
+            return false
+        }
+    }
+    
 }
