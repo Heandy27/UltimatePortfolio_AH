@@ -15,6 +15,10 @@ struct Filter: Identifiable, Hashable {
     // Filtro opcional por etiqueta (relacionado con la entidad Tag)
     var tag: Tag?
     
+    var activeIssuesCount: Int {
+        filter.tag?.tagActiveIssues.count ?? 0
+    }
+    
     
     // MARK: - Filtros estáticos predefinidos
     // Filtro que trae todos los elementos (sin restricción)
