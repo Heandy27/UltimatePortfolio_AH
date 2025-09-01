@@ -16,7 +16,7 @@ struct Filter: Identifiable, Hashable {
     var tag: Tag?
     
     var activeIssuesCount: Int {
-        filter.tag?.tagActiveIssues.count ?? 0
+        tag?.tagActiveIssues.count ?? 0
     }
     
     
@@ -25,7 +25,7 @@ struct Filter: Identifiable, Hashable {
     
     static var all = Filter(id: UUID(), name: "All Issues", icon: "tray")
     // Filtro que trae solo los elementos modificados en la última semana
-    static var recent = Filter(id: UUID(), name: "Recent issues", icon: "clock", minModificationDate: .now.addingTimeInterval(86400 * -7))
+    static var recent = Filter(id: UUID(), name: "Recent Issues", icon: "clock", minModificationDate: .now.addingTimeInterval(86400 * -7))
     
     
     // MARK: - Conformidad con Hashable
