@@ -1,0 +1,39 @@
+//
+//  SideBarViewToolbar.swift
+//  UltimatePortfolio_AH
+//
+//  Created by Andy Heredia on 2/9/25.
+//
+
+import SwiftUI
+
+struct SideBarViewToolbar: View {
+    
+    @EnvironmentObject var dataController: DataController
+    @State private var showingAwards = false
+    
+    var body: some View {
+        Button(action: dataController.newTag) {
+            Label("Add tag", systemImage: "plus")
+        }
+        
+        Button {
+            showingAwards.toggle()
+        } label: {
+            Label("Show awards", systemImage: "rosette")
+        }
+        .sheet(isPresented: $showingAwards, content: AwardView.init)
+#if DEBUG
+        Button {
+            dataController.deleteAll()
+            dataController.createSampleData()
+        } label: {
+            Label("ADD SAMPLES", systemImage: "flame")
+        }
+#endif
+    }
+}
+
+#Preview {
+    SideBarViewToolbar()
+}
