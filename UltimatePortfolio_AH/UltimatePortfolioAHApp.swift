@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 @main
 struct UltimatePortfolio_AHApp: App {
     
@@ -32,3 +33,4 @@ struct UltimatePortfolio_AHApp: App {
         }
     }
 }
+
