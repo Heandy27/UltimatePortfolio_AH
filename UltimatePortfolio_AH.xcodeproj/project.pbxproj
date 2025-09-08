@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF5D5F642E6F5FE0004131DC /* UltimatePortfolio_AH.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = BF5D5F612E6F5FE0004131DC /* UltimatePortfolio_AH.xctestplan */; };
+		BF5D5F652E6F5FE0004131DC /* AssetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5D5F5C2E6F5FE0004131DC /* AssetTests.swift */; };
+		BF5D5F662E6F5FE0004131DC /* AwardsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5D5F5D2E6F5FE0004131DC /* AwardsTest.swift */; };
+		BF5D5F672E6F5FE0004131DC /* DevelopmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5D5F5E2E6F5FE0004131DC /* DevelopmentTests.swift */; };
+		BF5D5F682E6F5FE0004131DC /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5D5F5F2E6F5FE0004131DC /* ExtensionTests.swift */; };
+		BF5D5F692E6F5FE0004131DC /* TagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5D5F602E6F5FE0004131DC /* TagTests.swift */; };
+		BF5D5F6A2E6F5FE0004131DC /* UltimatePortfolio_AHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5D5F622E6F5FE0004131DC /* UltimatePortfolio_AHTests.swift */; };
+		BF5D5F6D2E6F600B004131DC /* DecodableDictionary.json in Resources */ = {isa = PBXBuildFile; fileRef = BF5D5F6C2E6F600B004131DC /* DecodableDictionary.json */; };
+		BF5D5F6F2E6F6030004131DC /* DecodableString.json in Resources */ = {isa = PBXBuildFile; fileRef = BF5D5F6E2E6F6030004131DC /* DecodableString.json */; };
 		BFA93A2C2E6A299A00E42E11 /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA93A0A2E6A299A00E42E11 /* Award.swift */; };
 		BFA93A2D2E6A299A00E42E11 /* AwardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA93A0E2E6A299A00E42E11 /* AwardView.swift */; };
 		BFA93A2E2E6A299A00E42E11 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA93A0F2E6A299A00E42E11 /* Bundle-Decodable.swift */; };
@@ -48,6 +57,15 @@
 /* Begin PBXFileReference section */
 		BF0458062E6B3203006A77E8 /* UltimatePortfolio_AHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltimatePortfolio_AHTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF04580F2E6B3301006A77E8 /* UltimatePortfolio_AH.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = UltimatePortfolio_AH.xctestplan; path = UltimatePortfolio_AHTests/UltimatePortfolio_AH.xctestplan; sourceTree = "<group>"; };
+		BF5D5F5C2E6F5FE0004131DC /* AssetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTests.swift; sourceTree = "<group>"; };
+		BF5D5F5D2E6F5FE0004131DC /* AwardsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsTest.swift; sourceTree = "<group>"; };
+		BF5D5F5E2E6F5FE0004131DC /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
+		BF5D5F5F2E6F5FE0004131DC /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
+		BF5D5F602E6F5FE0004131DC /* TagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagTests.swift; sourceTree = "<group>"; };
+		BF5D5F612E6F5FE0004131DC /* UltimatePortfolio_AH.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = UltimatePortfolio_AH.xctestplan; sourceTree = "<group>"; };
+		BF5D5F622E6F5FE0004131DC /* UltimatePortfolio_AHTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimatePortfolio_AHTests.swift; sourceTree = "<group>"; };
+		BF5D5F6C2E6F600B004131DC /* DecodableDictionary.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableDictionary.json; sourceTree = "<group>"; };
+		BF5D5F6E2E6F6030004131DC /* DecodableString.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DecodableString.json; sourceTree = "<group>"; };
 		BF7911BC2E53B517000545C6 /* UltimatePortfolio_AH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UltimatePortfolio_AH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFA93A092E6A299A00E42E11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFA93A0A2E6A299A00E42E11 /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
@@ -81,14 +99,6 @@
 		BFA93A2B2E6A299A00E42E11 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		BF0458072E6B3203006A77E8 /* UltimatePortfolio_AHTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = UltimatePortfolio_AHTests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
-
 /* Begin PBXFrameworksBuildPhase section */
 		BF0458032E6B3203006A77E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -107,12 +117,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF5D5F632E6F5FE0004131DC /* UltimatePortfolio_AHTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF5D5F6B2E6F5FE2004131DC /* Fixtures */,
+				BF5D5F5C2E6F5FE0004131DC /* AssetTests.swift */,
+				BF5D5F5D2E6F5FE0004131DC /* AwardsTest.swift */,
+				BF5D5F5E2E6F5FE0004131DC /* DevelopmentTests.swift */,
+				BF5D5F5F2E6F5FE0004131DC /* ExtensionTests.swift */,
+				BF5D5F602E6F5FE0004131DC /* TagTests.swift */,
+				BF5D5F612E6F5FE0004131DC /* UltimatePortfolio_AH.xctestplan */,
+				BF5D5F622E6F5FE0004131DC /* UltimatePortfolio_AHTests.swift */,
+			);
+			path = UltimatePortfolio_AHTests;
+			sourceTree = "<group>";
+		};
+		BF5D5F6B2E6F5FE2004131DC /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				BF5D5F6C2E6F600B004131DC /* DecodableDictionary.json */,
+				BF5D5F6E2E6F6030004131DC /* DecodableString.json */,
+			);
+			path = Fixtures;
+			sourceTree = "<group>";
+		};
 		BF7911B32E53B517000545C6 = {
 			isa = PBXGroup;
 			children = (
 				BF04580F2E6B3301006A77E8 /* UltimatePortfolio_AH.xctestplan */,
 				BFA93A2A2E6A299A00E42E11 /* UltimatePortfolio_AH */,
-				BF0458072E6B3203006A77E8 /* UltimatePortfolio_AHTests */,
+				BF5D5F632E6F5FE0004131DC /* UltimatePortfolio_AHTests */,
 				BF7911BD2E53B517000545C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -240,9 +274,6 @@
 			dependencies = (
 				BF04580B2E6B3203006A77E8 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				BF0458072E6B3203006A77E8 /* UltimatePortfolio_AHTests */,
-			);
 			name = UltimatePortfolio_AHTests;
 			packageProductDependencies = (
 			);
@@ -317,6 +348,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF5D5F6F2E6F6030004131DC /* DecodableString.json in Resources */,
+				BF5D5F642E6F5FE0004131DC /* UltimatePortfolio_AH.xctestplan in Resources */,
+				BF5D5F6D2E6F600B004131DC /* DecodableDictionary.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +373,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF5D5F652E6F5FE0004131DC /* AssetTests.swift in Sources */,
+				BF5D5F662E6F5FE0004131DC /* AwardsTest.swift in Sources */,
+				BF5D5F672E6F5FE0004131DC /* DevelopmentTests.swift in Sources */,
+				BF5D5F682E6F5FE0004131DC /* ExtensionTests.swift in Sources */,
+				BF5D5F692E6F5FE0004131DC /* TagTests.swift in Sources */,
+				BF5D5F6A2E6F5FE0004131DC /* UltimatePortfolio_AHTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
