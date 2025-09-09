@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF06258B2E70AF3E006C6214 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06258A2E70AF3E006C6214 /* PerformanceTests.swift */; };
 		BF5D5F642E6F5FE0004131DC /* UltimatePortfolio_AH.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = BF5D5F612E6F5FE0004131DC /* UltimatePortfolio_AH.xctestplan */; };
 		BF5D5F652E6F5FE0004131DC /* AssetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5D5F5C2E6F5FE0004131DC /* AssetTests.swift */; };
 		BF5D5F662E6F5FE0004131DC /* AwardsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5D5F5D2E6F5FE0004131DC /* AwardsTest.swift */; };
@@ -57,6 +58,7 @@
 /* Begin PBXFileReference section */
 		BF0458062E6B3203006A77E8 /* UltimatePortfolio_AHTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UltimatePortfolio_AHTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF04580F2E6B3301006A77E8 /* UltimatePortfolio_AH.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = UltimatePortfolio_AH.xctestplan; path = UltimatePortfolio_AHTests/UltimatePortfolio_AH.xctestplan; sourceTree = "<group>"; };
+		BF06258A2E70AF3E006C6214 /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
 		BF5D5F5C2E6F5FE0004131DC /* AssetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTests.swift; sourceTree = "<group>"; };
 		BF5D5F5D2E6F5FE0004131DC /* AwardsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsTest.swift; sourceTree = "<group>"; };
 		BF5D5F5E2E6F5FE0004131DC /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				BF5D5F5D2E6F5FE0004131DC /* AwardsTest.swift */,
 				BF5D5F5E2E6F5FE0004131DC /* DevelopmentTests.swift */,
 				BF5D5F5F2E6F5FE0004131DC /* ExtensionTests.swift */,
+				BF06258A2E70AF3E006C6214 /* PerformanceTests.swift */,
 				BF5D5F602E6F5FE0004131DC /* TagTests.swift */,
 				BF5D5F612E6F5FE0004131DC /* UltimatePortfolio_AH.xctestplan */,
 				BF5D5F622E6F5FE0004131DC /* UltimatePortfolio_AHTests.swift */,
@@ -373,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF06258B2E70AF3E006C6214 /* PerformanceTests.swift in Sources */,
 				BF5D5F652E6F5FE0004131DC /* AssetTests.swift in Sources */,
 				BF5D5F662E6F5FE0004131DC /* AwardsTest.swift in Sources */,
 				BF5D5F672E6F5FE0004131DC /* DevelopmentTests.swift in Sources */,
