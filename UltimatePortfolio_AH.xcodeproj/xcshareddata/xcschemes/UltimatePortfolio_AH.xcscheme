@@ -46,6 +46,17 @@
                ReferencedContainer = "container:UltimatePortfolio_AH.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BF884CBB2E71E4F50028CF6B"
+               BuildableName = "UltimatePortfolio_AHUITests.xctest"
+               BlueprintName = "UltimatePortfolio_AHUITests"
+               ReferencedContainer = "container:UltimatePortfolio_AH.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

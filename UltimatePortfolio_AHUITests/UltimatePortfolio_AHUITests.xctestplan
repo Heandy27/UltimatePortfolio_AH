@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "17A88A87-DF95-467A-B004-50DA5A2618AC",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:UltimatePortfolio_AH.xcodeproj",
+        "identifier" : "BF884CBB2E71E4F50028CF6B",
+        "name" : "UltimatePortfolio_AHUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
