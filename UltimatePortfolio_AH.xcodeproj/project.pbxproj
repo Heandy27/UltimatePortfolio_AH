@@ -43,6 +43,7 @@
 		BFA93A432E6A299A00E42E11 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFA93A102E6A299A00E42E11 /* Colors.xcassets */; };
 		BFA93A442E6A299A00E42E11 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFA93A1C2E6A299A00E42E11 /* Localizable.strings */; };
 		BFA93A452E6A299A00E42E11 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = BFA93A1F2E6A299A00E42E11 /* Localizable.stringsdict */; };
+		BFB727162E7311D5001ADD30 /* SideBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB727152E7311D5001ADD30 /* SideBarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		BFA93A282E6A299A00E42E11 /* UltimatePortfolioAHApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UltimatePortfolioAHApp.swift; sourceTree = "<group>"; };
 		BFA93A292E6A299A00E42E11 /* UserFilterRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFilterRowView.swift; sourceTree = "<group>"; };
 		BFA93A2B2E6A299A00E42E11 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		BFB727152E7311D5001ADD30 /* SideBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -248,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				BFA93A222E6A299A00E42E11 /* SidebarView.swift */,
+				BFB727152E7311D5001ADD30 /* SideBarViewModel.swift */,
 				BFA93A152E6A299A00E42E11 /* Filter.swift */,
 				BFA93A232E6A299A00E42E11 /* SideBarViewToolbar.swift */,
 				BFA93A242E6A299A00E42E11 /* SmartFilterRowView.swift */,
@@ -457,6 +460,7 @@
 				BFA93A2E2E6A299A00E42E11 /* Bundle-Decodable.swift in Sources */,
 				BFA93A2F2E6A299A00E42E11 /* ContentView.swift in Sources */,
 				BFA93A302E6A299A00E42E11 /* ContentViewToolbar.swift in Sources */,
+				BFB727162E7311D5001ADD30 /* SideBarViewModel.swift in Sources */,
 				BFA93A312E6A299A00E42E11 /* DataController.swift in Sources */,
 				BFA93A322E6A299A00E42E11 /* DetailView.swift in Sources */,
 				BFA93A332E6A299A00E42E11 /* Filter.swift in Sources */,
