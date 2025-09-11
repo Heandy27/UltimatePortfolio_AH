@@ -44,6 +44,8 @@
 		BFA93A442E6A299A00E42E11 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFA93A1C2E6A299A00E42E11 /* Localizable.strings */; };
 		BFA93A452E6A299A00E42E11 /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = BFA93A1F2E6A299A00E42E11 /* Localizable.stringsdict */; };
 		BFB727162E7311D5001ADD30 /* SideBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB727152E7311D5001ADD30 /* SideBarViewModel.swift */; };
+		BFB727182E731D4E001ADD30 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB727172E731D36001ADD30 /* ContentViewModel.swift */; };
+		BFB7271A2E731F19001ADD30 /* IssueRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB727192E731F19001ADD30 /* IssueRowViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,8 @@
 		BFA93A292E6A299A00E42E11 /* UserFilterRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFilterRowView.swift; sourceTree = "<group>"; };
 		BFA93A2B2E6A299A00E42E11 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		BFB727152E7311D5001ADD30 /* SideBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBarViewModel.swift; sourceTree = "<group>"; };
+		BFB727172E731D36001ADD30 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		BFB727192E731F19001ADD30 /* IssueRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueRowViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -262,9 +266,11 @@
 		BFA93A4D2E6A2CE100E42E11 /* Issues */ = {
 			isa = PBXGroup;
 			children = (
+				BFB727172E731D36001ADD30 /* ContentViewModel.swift */,
 				BFA93A112E6A299A00E42E11 /* ContentView.swift */,
 				BFA93A122E6A299A00E42E11 /* ContentViewToolbar.swift */,
 				BFA93A172E6A299A00E42E11 /* IssueRowView.swift */,
+				BFB727192E731F19001ADD30 /* IssueRowViewModel.swift */,
 			);
 			path = Issues;
 			sourceTree = "<group>";
@@ -467,6 +473,7 @@
 				BFA93A342E6A299A00E42E11 /* Issue-CoreDataHelpers.swift in Sources */,
 				BFA93A352E6A299A00E42E11 /* IssueRowView.swift in Sources */,
 				BFA93A362E6A299A00E42E11 /* IssueView.swift in Sources */,
+				BFB727182E731D4E001ADD30 /* ContentViewModel.swift in Sources */,
 				BFA93A372E6A299A00E42E11 /* IssueViewToolbar.swift in Sources */,
 				BFA93A382E6A299A00E42E11 /* Main.xcdatamodeld in Sources */,
 				BFA93A392E6A299A00E42E11 /* NoIssueView.swift in Sources */,
@@ -477,6 +484,7 @@
 				BFA93A3E2E6A299A00E42E11 /* TagsMenuView.swift in Sources */,
 				BFA93A3F2E6A299A00E42E11 /* UltimatePortfolioAHApp.swift in Sources */,
 				BFA93A402E6A299A00E42E11 /* UserFilterRowView.swift in Sources */,
+				BFB7271A2E731F19001ADD30 /* IssueRowViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
