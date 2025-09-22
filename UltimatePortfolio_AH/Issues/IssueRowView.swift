@@ -27,7 +27,7 @@ struct IssueRowView: View {
                     
                     Text(viewModel.issueTagsList)
                         .foregroundStyle(.secondary)
-                        .lineLimit(1)
+                        .lineLimit(1) 
                 }
                 
                 Spacer()
