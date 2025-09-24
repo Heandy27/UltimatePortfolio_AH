@@ -17,6 +17,10 @@
 			</array>
 		</dict>
 	</array>
+	<key>NSUserActivityType</key>
+	<array>
+		<string>com.ravecodesolutions.UltimatePortfolio.newissue</string>
+	</array>
 	<key>UIApplicationShortcutItems</key>
 	<array>
 		<dict>
