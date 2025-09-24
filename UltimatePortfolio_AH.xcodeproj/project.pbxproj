@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BF06258B2E70AF3E006C6214 /* PerformanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06258A2E70AF3E006C6214 /* PerformanceTests.swift */; };
 		BF1EAC882E79DAAA00E32B49 /* DataController-Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1EAC872E79DAAA00E32B49 /* DataController-Notifications.swift */; };
+		BF3244612E84756E0004AE3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3244602E84756E0004AE3C /* AppDelegate.swift */; };
+		BF3244632E8475780004AE3C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3244622E8475780004AE3C /* SceneDelegate.swift */; };
 		BF5D5F642E6F5FE0004131DC /* UltimatePortfolio_AH.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = BF5D5F612E6F5FE0004131DC /* UltimatePortfolio_AH.xctestplan */; };
 		BF5D5F652E6F5FE0004131DC /* AssetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5D5F5C2E6F5FE0004131DC /* AssetTests.swift */; };
 		BF5D5F662E6F5FE0004131DC /* AwardsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5D5F5D2E6F5FE0004131DC /* AwardsTest.swift */; };
@@ -73,6 +75,8 @@
 		BF04580F2E6B3301006A77E8 /* UltimatePortfolio_AH.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = UltimatePortfolio_AH.xctestplan; path = UltimatePortfolio_AHTests/UltimatePortfolio_AH.xctestplan; sourceTree = "<group>"; };
 		BF06258A2E70AF3E006C6214 /* PerformanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceTests.swift; sourceTree = "<group>"; };
 		BF1EAC872E79DAAA00E32B49 /* DataController-Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataController-Notifications.swift"; sourceTree = "<group>"; };
+		BF3244602E84756E0004AE3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF3244622E8475780004AE3C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BF5D5F5C2E6F5FE0004131DC /* AssetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTests.swift; sourceTree = "<group>"; };
 		BF5D5F5D2E6F5FE0004131DC /* AwardsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsTest.swift; sourceTree = "<group>"; };
 		BF5D5F5E2E6F5FE0004131DC /* DevelopmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopmentTests.swift; sourceTree = "<group>"; };
@@ -219,6 +223,8 @@
 				BFA93A4A2E6A2A9F00E42E11 /* Localization */,
 				BFA93A282E6A299A00E42E11 /* UltimatePortfolioAHApp.swift */,
 				BFA93A132E6A299A00E42E11 /* DataController.swift */,
+				BF3244602E84756E0004AE3C /* AppDelegate.swift */,
+				BF3244622E8475780004AE3C /* SceneDelegate.swift */,
 				BF1EAC872E79DAAA00E32B49 /* DataController-Notifications.swift */,
 				BFAF8C202E81CE3100D04DAC /* DataController-StoreKit.swift */,
 			);
@@ -484,6 +490,7 @@
 				BFA93A2D2E6A299A00E42E11 /* AwardView.swift in Sources */,
 				BFA93A2E2E6A299A00E42E11 /* Bundle-Decodable.swift in Sources */,
 				BFA93A2F2E6A299A00E42E11 /* ContentView.swift in Sources */,
+				BF3244612E84756E0004AE3C /* AppDelegate.swift in Sources */,
 				BFA93A302E6A299A00E42E11 /* ContentViewToolbar.swift in Sources */,
 				BFB727162E7311D5001ADD30 /* SideBarViewModel.swift in Sources */,
 				BFAF8C212E81CE3100D04DAC /* DataController-StoreKit.swift in Sources */,
@@ -491,6 +498,7 @@
 				BFA93A312E6A299A00E42E11 /* DataController.swift in Sources */,
 				BFA93A322E6A299A00E42E11 /* DetailView.swift in Sources */,
 				BFA93A332E6A299A00E42E11 /* Filter.swift in Sources */,
+				BF3244632E8475780004AE3C /* SceneDelegate.swift in Sources */,
 				BFA93A342E6A299A00E42E11 /* Issue-CoreDataHelpers.swift in Sources */,
 				BFA93A352E6A299A00E42E11 /* IssueRowView.swift in Sources */,
 				BFA93A362E6A299A00E42E11 /* IssueView.swift in Sources */,
