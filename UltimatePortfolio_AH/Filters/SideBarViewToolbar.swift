@@ -18,13 +18,14 @@ struct SideBarViewToolbar: View {
             Label("Add tag", systemImage: "plus")
         }
         .sheet(isPresented: $showingStore, content: StoreView.init)
-        
+        .help("Add tag")
         Button {
             showingAwards.toggle()
         } label: {
             Label("Show awards", systemImage: "rosette")
         }
         .sheet(isPresented: $showingAwards, content: AwardView.init)
+        .help("Show award")
 #if DEBUG
         Button {
             dataController.deleteAll()

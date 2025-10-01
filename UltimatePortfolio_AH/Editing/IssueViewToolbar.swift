@@ -22,7 +22,7 @@ struct IssueViewToolbar: View {
     var body: some View {
         Menu {
             Button {
-                UIPasteboard.general.string = issue.title
+                copyToClipboard()
             } label: {
                 Label("Copy Issue Title", systemImage: "doc.on.doc")
             }
@@ -76,6 +76,15 @@ struct IssueViewToolbar: View {
                 
             }
         }
+    }
+    
+    func copyToClipboard() {
+        #if os(iOS)
+        UIPasteboard.general.string = issue.title
+        #else
+        NSPasteboard.general.prepareForNewContents()
+        NSPasteboard.general.setString(issue.issueTitle, forType: .string)
+        #endif
     }
 }
 
