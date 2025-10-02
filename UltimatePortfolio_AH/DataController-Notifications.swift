@@ -7,6 +7,7 @@
 
 import Foundation
 import UserNotifications
+import CoreData
 
 extension DataController {
     func addReminder(for issue: Issue) async -> Bool {

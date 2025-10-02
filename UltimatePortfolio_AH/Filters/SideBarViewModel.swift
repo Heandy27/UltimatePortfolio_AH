@@ -6,6 +6,7 @@
 //
 import CoreData
 import Foundation
+import Combine
 
 extension SidebarView {
     class ViewModel: NSObject, ObservableObject, NSFetchedResultsControllerDelegate {

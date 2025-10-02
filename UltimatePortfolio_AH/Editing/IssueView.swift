@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreData
 
 struct IssueView: View {
     @EnvironmentObject var dataController: DataController
@@ -75,7 +76,7 @@ struct IssueView: View {
             SettingsLink {
                 Text("Check Settings")
             }
-            #else
+            #elseif os(iOS)
             Button("Check Settings", action: showAppSettings)
             #endif
            

@@ -4,9 +4,11 @@
 //
 //  Created by Andy Heredia on 18/8/25.
 //
-
-import SwiftUI
+#if canImport(CoreSpotlight)
 import CoreSpotlight
+#endif
+import SwiftUI
+import CoreData
 
 @main
 struct UltimatePortfolio_AHApp: App {
@@ -33,15 +35,18 @@ struct UltimatePortfolio_AHApp: App {
                         dataController.save()
                     }
                 }
+            #if canImport(CoreSpotlight)
                 .onContinueUserActivity(CSSearchableItemActionType, perform: loadSpotlightItem)
+            #endif
         }
     }
-    
+    #if canImport(CoreSpotlight)
     func loadSpotlightItem(_ userActivity: NSUserActivity) {
         if let uniqueIdentifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String {
             dataController.selectedIssue = dataController.issue(with: uniqueIdentifier)
             dataController.selectedFilter = .all
         }
     }
+    #endif
 }
 

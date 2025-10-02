@@ -13,6 +13,8 @@ struct TagsMenuView: View {
     @ObservedObject var issue: Issue
     
     var body: some View {
+        #if !os(watchOS)
+       
         Menu {
             // show selected tags first
             ForEach(issue.issueTags) { tag in
@@ -41,6 +43,7 @@ struct TagsMenuView: View {
             Text(issue.issueTagsList)
                 .multilineTextAlignment(.leading)
         }
+        #endif
     }
 }
 

@@ -6,12 +6,15 @@
 //
 
 import Foundation
+import Combine
 
 extension IssueRowView {
     
     @dynamicMemberLookup
     
     class ViewModel: ObservableObject {
+        //var objectWillChange: ObservableObjectPublisher
+        
         let issue: Issue
         
         var iconOpacity: Double {
