@@ -8,7 +8,9 @@
 import CoreData
 import StoreKit
 import SwiftUI
+#if canImport(WidgetKit)
 import WidgetKit
+#endif
 import Combine
 
 enum SortType: String {
@@ -195,18 +197,24 @@ class DataController: ObservableObject {
         
         if container.viewContext.hasChanges {
             try? container.viewContext.save()
-            WidgetCenter.shared.reloadAllTimelines()
+            #if canImport(WidgetKit)
+            if #available(visionOS 26.0, *) {
+                WidgetCenter.shared.reloadAllTimelines()
+            } else {
+                // Fallback on earlier versions
+            }
+            #endif
         }
     }
     
-    func queueSave() {
-        saveTask?.cancel()
-        
-        saveTask = Task { @MainActor in
-            try await Task.sleep(for: .seconds(3))
-            save()
-        }
-    }
+//    func queueSave() {
+//        saveTask?.cancel()
+//        
+//        saveTask = Task { @MainActor in
+//            try await Task.sleep(for: .seconds(3))
+//            save()
+//        }
+//    }
     
     func delete(_ object: NSManagedObject) {
         objectWillChange.send()

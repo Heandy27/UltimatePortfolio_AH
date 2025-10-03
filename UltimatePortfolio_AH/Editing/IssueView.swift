@@ -64,7 +64,7 @@ struct IssueView: View {
         .disabled(issue.isDeleted)
         .onReceive(issue.objectWillChange) { _ in
             print("Queuing save")
-            dataController.queueSave()
+            dataController.save()
             print("Saved")
         }
         .onSubmit(dataController.save)
